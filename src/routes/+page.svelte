@@ -2,11 +2,11 @@
   import Card from '$lib/components/Card.svelte';
   import Feed from '$lib/components/Feed.svelte';
 
-	export let data;
+  export let data;
 
-	const { blocks } = data;
+  const { blocks } = data;
 
-	console.log(blocks)
+  console.log(blocks);
 
   let windowWidth: number;
 
@@ -21,5 +21,5 @@
 
 <main class="flex flex-wrap p-5">
   <Card />
-	<Feed events={blocks}/>
+  <Feed events={blocks} />
 </main>
