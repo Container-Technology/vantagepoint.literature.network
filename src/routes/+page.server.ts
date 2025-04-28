@@ -11,9 +11,9 @@ export const load: PageLoad = async () => {
     direction: 'asc'
   });
 
-	const textBlocks = blocks.filter((block) => block.class == 'Text')
+  const textBlocks = blocks.filter((block) => block.class == 'Text');
 
   return {
-		blocks: textBlocks,
+    blocks: textBlocks
   };
 };

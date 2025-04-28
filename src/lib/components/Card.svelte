@@ -9,8 +9,8 @@
 
   const connectionInterval = setInterval(() => {
     if (step >= connectionLimit) {
-      $connectionLoaded = true;
       clearInterval(connectionInterval);
+      $connectionLoaded = true;
     }
 
     if (step % 2 === 0) {
@@ -28,7 +28,7 @@
     {connection}
   </div>
 
-  {#if $connectionLoaded}
+  {#if $connectionLoaded === true}
     <div
       class="flex flex max-w-12/12 px-0 pt-5 text-lg text-gray-200 lg:max-w-8/12 lg:text-base xl:max-w-6/12"
       in:fade={{ delay: 300 }}
