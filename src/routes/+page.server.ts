@@ -8,7 +8,7 @@ export const load: PageLoad = async () => {
   const channel: ArenaChannelApi = await client.channel(ARENA_CHANNEL);
 
   const { contents: blocks }: GetChannelContentsApiResponse = await channel.contents({
-    direction: 'asc'
+    direction: 'desc'
   });
 
   const textBlocks = blocks.filter((block) => block.class == 'Text');
